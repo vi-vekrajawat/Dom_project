@@ -1,0 +1,113 @@
+.nav{
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+background-color: white;
+    display: flex;
+    height: 80px;
+    /* background-color: red; */
+}
+.divpara{
+    /* justify-content: space-between; */
+    margin-left: 280px;
+    display: flex;
+}
+.divpara p{
+    padding-top: 15px;
+    padding-left: 70px;
+
+}
+.videodiv{
+    margin-top: 80px;
+    /* width: 900px; */
+background-color: red;  
+display: flex;    
+}
+.sdiv{
+    background-color: blue;
+    color: white;
+    padding: 30px;
+}
+.imgdiv{
+    display: flex;
+}
+.btn{
+    border: 1px solid white;
+    height: 40px;
+    width: 150px;
+    margin-top: 80px;
+    background-color: blue;
+    color: white;
+}
+.hd1{
+    padding-left: 500px;
+}
+.leftdiv{
+    height: 100px;
+    margin-top: 150px;
+
+    width: 100px;
+    background-color: rgb(35, 116, 247);
+}
+.rightdiv{
+    height: 100px;
+    width: 100px;
+    background-color: yellow;
+    margin-top: 150px;
+}
+.bothdiv{
+    display: flex;
+    margin-left: 220px;
+}
+.paraspan{
+    font-size: 20px;
+    padding-left: 320px;
+}
+.pdiv{
+    padding-left: 320px;
+    /* line-gap-override: 30px; */
+    line-height: 8px;
+    font-size: 20px;
+}
+.kmbtn{
+    margin-left: 250px;
+    margin-top: 20px;
+    height: 60px;
+    width: 220px;
+    /* border-radius: 5%; */
+    background-color: blue;
+    color: white;
+    border-color: blue;
+}
+.div1{
+    display: flex;
+}
+.div3{
+    margin-top: 50px;
+}
+.readmore{
+    margin-top: 30px;
+    margin-left: 50px;
+    height: 50px;
+    width: 220px;
+    background-color: rgb(43, 101, 249);
+    color: white;
+    border-color: white;
+}
+
+.footdiv{
+    display: flex;
+    box-shadow: 0 0 2px rgba(0,0,0,0.2);
+    
+
+}
+.contentdiv{
+    margin-top: 20px;
+    display: flex;
+    /* padding-left: 40px; */
+}
+.cpara{
+    padding-left: 60px;
+
+}

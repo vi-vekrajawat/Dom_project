@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+   .maindiv{
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: white; /* ya aapka nav ka bg color */
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px; /* adjust as per your layout */
+  /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);  */
+}
+.nav1{
+  height: 70px;
+  width: 700px;
+  background-color: rgb(70, 70, 255);
+  display: flex;
+}
+.nav2{
+  height: 70px;
+  width: 900px;
+  background-color: rgb(70, 70, 255);
+  display: flex;
+}
+.inpara{
+  padding-bottom: 10px;
+}
+.flip{
+  padding-left: 150px;
+  color: white;
+  font-family: "Carter One" ,cursive;
+}
+.explore{
+   color: rgb(166, 166, 149);
+}
+.plus{
+  color: rgb(246, 246, 72);
+}
+.vl1 {
+  margin-top: 30px;
+  border-left: 1px solid rgb(101, 108, 107);
+  height: 34px;
+  margin-left: 8px;
+}
+.hlpcntr{
+  margin-left: 10px;
+  margin-top: 10px;
+  font-weight: bold;
+  color: white;
+}
+.btn{
+  background-color: red;
+  width: 120px;
+  height: 20px;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+.lbtn{
+/* padding-top: 30px; */
+  width: 120px;
+  height: 30px;
+  color: rgb(84, 84, 255);
+  font-weight: bold;
+
+}
+.divp{
+  /* background-color: red; */
+  height: 30px;
+  margin-top: 10px;
+  margin-left: 50px;
+  color: white;
+  font-weight: bold;
+  display: flex;
+}
+.more{
+  margin-left: 50px;
+}
+.divimagecart{
+  /* background-color: red; */
+  margin-left: 40px;
+  margin-top: 15px;
+  font-weight: bold;
+}
+.drpdwn{
+  margin-top: 17px;
+  color: white;
+}
+
+
+
+
+.navdiv{
+    display: flex;
+    height: 60px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+
+    /* background-color: red; */
+}
+.navpara{
+    padding-left: 50px;
+}
+.navdiv{
+  margin-top: 90px;
+    display: flex;
+    height: 60px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+
+    /* background-color: red; */
+}
+.navpara{
+    padding-left: 50px;
+}
+.bdy_img{
+  margin-left: 200px;
+  margin-top: 8px;
+}
+.bdy_para{
+  height: 150px;
+  width: 600px;
+  background-color: rgb(66, 45, 180);
+  margin-left: 240px;
+  align-content: center;
+  justify-content: center;
+  border-radius: 10px;
+  margin-top: 8px;
+
+}
+.bdy_para h3,h2{
+  padding-left: 180px;
+}
+.bdy_para h3{
+  color: yellow;
+}
+.bdy_para h2{
+  color: white;
+}
+.bdy_para1{
+  padding-left: 240px;
+}
+.d_img{
+  margin-top: 30px;
+  margin-left: 30px;
+}
+.spanPara1{
+  padding-top: 50px;
+}
+
+.footer{
+      display: flex;
+    }
+    .info,.info1,.info2,.info3{
+      color: white;
+      /* padding-top: 5px; */
+      padding-left: 60px;
+    }
+    .vl {
+      margin-top: 20px;
+      border-left: 1px solid rgb(101, 108, 107);
+      height: 340px;
+      margin-left: 30px;
+    }
+    .info4,.info5{
+      color: white;
+      /* padding-top: 10px; */
+      padding-left: 30px;
+    }
+    .MainFooter{
+      display: flex;
+      margin-top: 30px;
+      height: 350px;
+      width: 1255px;
+      background-color: black;
+    }
+    .footer1{
+      display: flex;
+    }
+    .fp{
+      color: rgb(101, 108, 107);
+    }
+    
+   .horoLine{
+    background-color: black;
+    height: 140px;
+    width: 1255px;
+  
+   }
+  
+    .hol {
+      padding-top: 40px;
+      border: 1px solid red;
+    }
+    .fcion{
+      color: white;
+      padding-left: 30px;
+      font-size: 13px;
+  
+    }
+    .footericon{
+      display: flex;
+      padding: 30px;
+    }
+    .fction,img{
+      padding-left: 10px;
+    }
+    #rate{
+      color: white;
+    }
+    #fcionimg{
+      padding-top: 6px;
+    }
+    #last{
+      padding-top: 3px;
+    }
+    #hrline{
+      color: rgb(101, 108, 107);
+  
+    }
+   
+</style>
+<body>
+    <div class="maindiv">
+        <div class="nav1"> 
+          <p class="flip"><img src="icons/pic_files/flipkart-plus_8d85f4.png" height="20px" width="90px" alt=""> <br><span class="explore">Explore </span> <span class="plus">plus <img src="icons/pic_files/plus_aef861.png" height="10px" width="10px" alt=""> </span></p>
+          <div class="vl1"><span class="hlpcntr">Help Center</span></div>
+        </div>
+        <div class="nav2">
+          <div class="btn">
+          <button class="lbtn">Login</button>
+        </div>
+        <div class="divp">
+        <p class="bac">Become a Seller</p>
+        <p class="more">More</p>
+        <div class="drpdwn">
+          <img src="icons/drop-down-25-16.png" height="20px" width="20px" alt="Dropdown icon">
+        </div>
+        <div class="divimagecart">
+        <img src="icons/cart1.jpg" alt="" style="color: red; " height="20px" width="20px">
+      </div>
+      <a style="text-decoration: none; " href="Cart.html">
+        <p style="text-decoration: none; color: white;" class="cart"> Cart</p> </a>
+      </div>
+        </div>
+      </div>
+
+      <div class="navdiv">
+        <p class="navpara" >Electronics</p>
+        <p class="navpara" >TVs & Appliances</p>
+        <p class="navpara" >Men</p>
+        <p class="navpara" >Women</p>
+        <p class="navpara" >Baby & Kids</p>
+        <p class="navpara" >Home & Furniture</p>
+        <p class="navpara" >Sports , Books & More</p>
+        <p class="navpara" >Flights</p>
+        <p class="navpara" >Offer Zone</p>
+    </div>
+    <h3>Gift Card Store</h3>
+    <div><span>Special occasions call for special gifts. Whether it’s a birthday or an anniversary, finding the right gift for your loved ones is always a difficult task. And after you get a gift, you have to hope that they like what you got. Well, there’s a simple solution to this conundrum - Flipkart Gift Cards Store. You can give Flipkart gift cards and Vouchers across multiple occasions to your friends or family and give them the chance to shop for whatever their heart desires. So, what are you waiting for? Get gift vouchers online on Flipkart, gift or redeem them and do more with this feature. Flipkart Gift Card Store also has a wide range of Gift Cards from categories such as travel, jewellery, fashion, grocery, and apps & more. You can choose from a diverse range of denominations available or enter any preferred amount between Rs 25 to Rs 10,000. Bid adieu to gifting troubles, send online gift cards to your friends and family, bring a smile to their faces and make special moments even more special!. The information you are reading has been last updated on 17-Apr-25.</span>
+    </div>
+      <img class="bdy_img" src="https://images.kinguin.net/g/carousel-main-mobile/media/images/products/_flipkartss.jpg" height="300px" width="700px" alt="">
+<div class="bdy_para">
+  <h3>Have a Flipkart Gift Card ?</h3>
+  <h2>Add a wallet ></h2>
+
+</div>
+<div class="bdy_para1">
+<h1>Occasion based gift Cards</h1>
+<p>There is somthing for every ocassion!</p>
+<h3>Shop By Price</h3>
+</div>
+<div class="d_img">
+<img src="icons/yellowPic.webp" height="250px" width="1000px" alt="">
+</div>
+
+
+<div  class="spanPara1">
+<span>Gift Cards: The Perfect Present for Every Occasion
+  Make special occasions memorable by giving your loved ones gift cards. It is an ideal solution for the difficult task of choosing the right gift. You can give it to your family and friends on their birthday or anniversary, allowing them to shop for what they desire. In addition, you can choose from a wide range of categories and a diverse range of denominations. You can customise and personalise it to add warmth and love while gifting it to your dear ones. Moreover, it has options for both physical and online gift cards. You can opt for the one depending on the occasion whether you are meeting the recipient in person or not. These virtual gift cards make the gifting process easy and convenient even at the last moment.
+  
+  Gift Cards range from Rs. 50 to Rs. 10,000 and above. You can choose one as per your wish and the category you want to choose. You can gift them Flipkart Gift Cards or choose from 100+ brands like Myntra, Tanishq, Croma, Google Play, Big Bazar & others from categories such as Fashion, Travel, Jewellery, Grocery, Apps and Subscriptions. 
+  
+  Do not miss out on gifting your loved ones on any special occasion with these gift cards from Flipkart
+  
+  Types of Gift Cards Available
+  Flipkart offers different types of gift cards.
+  
+  Digital Gift Cards: Give your friends and family e-gift cards instantly via email for online use.
+  Physical Gift Cards: Make gifting in person special with these tangible cards.
+  Personalised Gift Cards: Add a personal touch with customised designs and messages.
+  Corporate Gift Cards: Reward employees and appreciate clients to build professional relationships.
+  Multi-Brand Gift Cards: Ideal for access across different stores or services.
+  How to Purchase a Gift Card
+  Take the following steps to buy a gift card.
+  
+  Go to the Gift Cards section on the platform.
+  Choose the type and design of the gift card.
+  Select the denomination or enter the amount.
+  Add the recipient’s email for digital cards or address for physical cards.
+  Write a personal message (optional).
+  Make the payment and the card will be sent or shipped to the recipient.
+  Benefits of Giving Gift Cards
+  Gift cards offer amazing benefits and are ideal presents.
+  
+  Flexibility: Recipients can shop for what their heart desires.
+  Convenience: Simple ways to purchase and send, ensuring you do not miss out on gifting even at the last minute.
+  Personalisation: Allows you to customise and personalise it with the design and message.
+  Versatility: Ideal for every special occasion like birthdays, weddings, or holidays.
+  No Expiration Worries: Long validity periods for many cards.
+  How to Redeem a Gift Card
+  You can redeem a gift card in the following steps:
+  
+  When you make a purchase, enter the code on the gift card at checkout.
+  Select to apply the code. The amount on the card will be deducted from your total billed amount.
+  In case of visiting physical stores, submit the gift card at the counter.
+  Why Buy Gift Cards From Us?
+  Flipkart offers several benefits for purchasing gift cards:
+  
+  You can find a variety of design and denomination options.
+  Offers instant digital delivery even for gifting at the last minute.
+  The modes of transition are secure and reliable.
+  Special cards come with exclusive discounts and bonus offers.
+  Provides 24/7 customer support for queries.</span>
+</div>
+
+<div class="MainFooter">
+  <div class="footer">
+  <div class="info">
+    <p class="fp">About</p>
+    <!-- <p>Contact Us</p> -->
+     <a style="color: white; text-decoration: none;" href="Contact.html">Contact Us</a>
+     <a href="About.html" style="text-decoration: none; color: white;"><p>About Us</p></a>
+     <p>Carrers</p>
+    <p>Flipcart Stories</p>
+    <p>Press</p>
+    <p><a style="text-decoration: none; color: white;" href="Corporate.html">Corporate Information</a></p>
+
+  </div>
+  
+  <div class="info1">
+  <p class="fp">Group Companies</p>
+  <p>Mayntra</p>
+  <p>Cleartrip</p>
+  <p>Shopsy</p>
+  </div>
+  
+  <div class="info2">
+    <p class="fp">Help</p>
+    <p>Payments</p>
+    <p>Shipping</p>
+    <p>Cancellation & </p>
+    <p>Returns</p>
+    <p>FAQ</p>
+  </div>
+  
+  <div class="info3">
+    <p class="fp">Consumer Policy</p>
+    <p>Cancellation &</p>
+    <p>Returns</p>
+    <p>Terms of Use</p>
+    <p>Security</p>
+    <p>Privacy</p>
+    <p>Sitemap</p>
+    <p>Grievance Redressal</p>
+    <p>EPR Compliance</p>
+  </div>
+  
+  <div class="vl"></div>
+  </div>
+  
+  <div class="footer1">
+  <div class="info4">
+    <p class="fp">Mail Us:</p>
+    <p>Flipcart Internert Private Limited,</p>
+    <p>Building Alyssa, Begonia &</p>
+    <p>Clove Embassy Tech Village,</p>
+    <p>Outer Ring Road,Deverabeesanahalli village,</p>
+    <p>Benguluru, 560103,</p>
+    <p>Karnatka,India</p>
+    <!-- <br> -->
+    
+    <p>Social:</p>
+    <!-- <br> -->
+    <div class="divimage">
+    <img class="fimge" src="icons/facebook.svg" alt="">
+    <img class="fimge" src="icons/ytbe.svg" alt="">
+    <img class="fimge" src="icons/x.svg" alt="">
+    <img class="fimge" src="icons/insta.svg" height="20px" width="20px" alt="">
+  </div>
+  </div>
+  
+  <div class="info5">
+    <p class="fp">Ragistered Office Address </p>
+    <p>Flipcart Internert Private Limited,</p>
+    <p>Building Alyssa, Begonia &</p>
+    <p>Clove Embassy Tech Village,</p>
+    <p>Outer Ring Road,Deverabeesanahalli village,</p>
+    <p>Benguluru, 560103,</p>
+    <p>Karnatka,India</p>
+    <p>CIN : U51109KA2012PTC066107</p>
+    <p>Telephone : 044 - 45614700/044-67415800</p>
+  </div>
+  </div>
+  
+  
+   
+  </div>
+  </div>
+  
+  <div class="horoLine">
+    <br><br><br>
+    <hr id="hrline">
+    <div class="footericon">
+   <div class="fcion"><img src="icons/f1.svg" alt="">Become a Seller</div>
+   <div class="fcion"><img src="icons/f2.svg" alt=""><a style="text-decoration: none; color: white;" href="Advertise.html">Advertise</a></div>
+   <div class="fcion"><img src="icons/f3.svg" alt=""><a style="text-decoration: none; color: white;" href="Giftcard.html">Gift Cards</a></div>
+   <div class="fcion"><img src="icons/f4.svg" alt="">Help Center</div>
+   <div class="fcion" id="fcionimg" ><img src="icons/atrate.png" height="10px" width="30px"  alt="">2007 - 2005 Flipcart.com</div>
+   <div class="fcion" id="last"><img src="icons/i1.svg" alt=""></div>
+  </div>
+  
+  </div>
+
+    </body>
+</html>
