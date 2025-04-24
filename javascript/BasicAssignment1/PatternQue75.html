@@ -1,0 +1,19 @@
+<script>
+      let num = prompt("Enter number")
+                for(let i = 1;i<=num;i++){
+                            for(let s = 0;s<=i;s++){
+                                document.write(" ")
+                            }
+                            for(let j = 1;j<=(num-i)*2-1;j++){
+                                if(i>1&&(j>1&&j<(num-i)*2-1)){
+                                    document.write("+")
+                                }
+                                else{
+
+                                    document.write(j)
+                                }
+                                        }
+                        
+                            document.write("<br>")
+                        }  
+</script>

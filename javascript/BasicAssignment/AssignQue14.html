@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Assignment question 14</h1>
+    <script>
+        // let str = prompt("Enter any alphabet")
+        // document.write(str.toUpperCase())
+
+
+// document.write("Enter alphabet<br>");
+let alpha = prompt("Enter any alphabet character"); 
+let ascii = alpha.trim().charCodeAt(0); 
+if(ascii>96 && ascii<122){
+if (alpha && alpha.length > 0 ) {
+    let ascii = alpha.trim().charCodeAt(0); 
+    let convert = String.fromCharCode(ascii1-32)
+    document.write(convert)
+   
+} else {
+    document.write("No input provided. or you entered only space");
+}
+}
+
+
+
+else if(ascii>64 && ascii<91){
+if (alpha && alpha.length > 0) {
+    let ascii = alpha.trim().charCodeAt(0); 
+    let convert = String.fromCharCode(ascii+32)
+    document.write(convert)
+   
+} else {
+    document.write("No input provided. or you entered only space");
+}
+}
+
+
+
+else{
+    document.write("Perhaps ! you entered somthing else")
+}
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Assignment question 53</h1>
+    <script>
+           let num = prompt("Enter first number")
+           let num2 = prompt("Enter first number")
+           for(let i = num;i<=num2;i++){
+
+        let num1 = i
+        let fact = 0
+        while(num1>0){
+            let fact1 = 1;
+            let rem = num1%10
+            for(let j = 1;j<=rem;j++){
+                fact1*=j
+            }
+            fact+=fact1
+            num1 = parseInt(num1/10)
+        }
+        if(fact==i){
+            document.write(i+" ")
+        }
+        // else{
+        //     document.write("number is not strong")
+        // }
+    }
+    </script>
+</body>
+</html>

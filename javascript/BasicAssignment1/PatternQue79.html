@@ -1,0 +1,29 @@
+<script>
+    let num = prompt("Enter number")
+    for(let i =1;i<num;i++){
+        for(let j =1;j<=i;j++){
+            if(((i>=3&&i<=num)&&(j<i&&j>1))){
+                document.write("&nbsp;")
+
+            }
+            else{
+            document.write(j)
+            }
+        }
+        document.write("<br>")
+    }
+
+    for(let i = 0;i<num;i++){
+        for(let j = 1;j<=num-i;j++){
+            if((i>=0&&i<num-2)&&(j>1&&j<num-i)){
+                document.write("&nbsp;")
+            }
+            else{
+            document.write(j)
+        }
+    }
+
+        document.write("<br>")
+
+    }// ye perfect bn gya kisi  number ke liye 
+</script>

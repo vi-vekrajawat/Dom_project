@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<style>
+  .maindiv {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    /* ya aapka nav ka bg color */
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    /* adjust as per your layout */
+    /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);  */
+    /* box-shadow: 0 0 15px rgba(0,0,0,0.2); */
+
+  }
+
+  body {
+    padding-top: 80px;
+  }
+
+  .nav1 {
+    height: 70px;
+    width: 700px;
+    background-color: rgb(70, 70, 255);
+    display: flex;
+  }
+
+  .nav2 {
+    height: 70px;
+    width: 900px;
+    background-color: rgb(70, 70, 255);
+    display: flex;
+  }
+
+  .inpara {
+    padding-bottom: 10px;
+  }
+
+  .flip {
+    padding-left: 150px;
+    color: white;
+    font-family: "Carter One", cursive;
+  }
+
+  .explore {
+    color: rgb(166, 166, 149);
+  }
+
+  .plus {
+    color: rgb(246, 246, 72);
+  }
+
+  .vl1 {
+    margin-top: 30px;
+    border-left: 1px solid rgb(101, 108, 107);
+    height: 34px;
+    margin-left: 8px;
+  }
+
+  .hlpcntr {
+    margin-left: 10px;
+    margin-top: 10px;
+    font-weight: bold;
+    color: white;
+  }
+
+  .btn1 {
+    background-color: red;
+    width: 120px;
+    height: 20px;
+    margin-top: 20px;
+    margin-left: 20px;
+  }
+
+  .lbtn1 {
+    width: 120px;
+    height: 30px;
+    color: rgb(84, 84, 255);
+    font-weight: bold;
+
+  }
+
+  .divp {
+    height: 30px;
+    margin-top: 10px;
+    margin-left: 50px;
+    color: white;
+    font-weight: bold;
+    display: flex;
+  }
+
+  .more {
+    margin-left: 50px;
+  }
+
+  .divimagecart1 {
+    margin-left: 40px;
+    margin-top: 15px;
+    font-weight: bold;
+  }
+
+  .drpdwn {
+    margin-top: 17px;
+    color: white;
+  }
+
+
+  .navdiv {
+    /* margin-top: 15px; */
+    display: flex;
+    height: 60px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+
+    /* background-color: red; */
+  }
+
+  .navpara {
+    padding-left: 50px;
+  }
+
+  .bdydiv1 {
+    height: 120px;
+    margin-top: 8px;
+    width: 450px;
+    /* padding-left: 20px; */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  }
+
+  
+
+
+  .bdydiv2 {
+    margin-top: 8px;
+    margin-left: 15px;
+    height: 700px;
+    width: 1200px;
+    background-color: white;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  }
+
+  .bdydivmain {
+    display: flex;
+  }
+
+  .rghtdiv {
+    display: flex;
+    /* padding-top: 20px; */
+  }
+
+  .rightdiv2 {
+    margin-left: 130px;
+    margin-top: 50px;
+    border-radius: 50px;
+  }
+
+  .rightdiv2 span {
+    color: white;
+  }
+
+  .rghtdiv1 span {
+    margin-left: 30px;
+    /* font-size: 8px; */
+  }
+
+  .rhgtdiv1 {
+    letter-spacing: 20px;
+    gap: 20px;
+  }
+
+  .bdydiv1 p {
+    padding-left: 80px;
+    padding-top: 10px;
+  }
+
+  .bell {
+    padding-left: 30px;
+    margin-top: 15px;
+  }
+
+  .inlbl {
+    margin-top: 8px;
+  }
+
+  hr {
+    margin-left: 10px;
+  }
+  .img2{
+    margin-left: 130px;
+
+  }
+  .img1{
+    margin-left: 215px;
+
+  }
+  .img3{
+    padding-left: 50px;
+  }
+  .img4{
+    padding-left: 210px;
+  }
+  .img5{
+margin-left: 210px;
+  }
+
+  .footer{
+      display: flex;
+    }
+    .info,.info1,.info2,.info3{
+      color: white;
+      /* padding-top: 5px; */
+      padding-left: 60px;
+    }
+    .vl {
+      margin-top: 20px;
+      border-left: 1px solid rgb(101, 108, 107);
+      height: 340px;
+      margin-left: 30px;
+    }
+    .info4,.info5{
+      color: white;
+      /* padding-top: 10px; */
+      padding-left: 30px;
+    }
+    .MainFooter{
+      display: flex;
+      margin-top: 30px;
+      height: 350px;
+      width: 1255px;
+      background-color: black;
+    }
+    .footer1{
+      display: flex;
+    }
+    .fp{
+      color: rgb(101, 108, 107);
+    }
+    
+   .horoLine{
+    background-color: black;
+    height: 140px;
+    width: 1255px;
+  
+   }
+  
+    .hol {
+      padding-top: 40px;
+      border: 1px solid red;
+    }
+    .fcion{
+      color: white;
+      padding-left: 30px;
+      font-size: 13px;
+  
+    }
+    .footericon{
+      display: flex;
+      padding: 30px;
+    }
+    .fction,img{
+      padding-left: 10px;
+    }
+    #rate{
+      color: white;
+    }
+    #fcionimg{
+      padding-top: 6px;
+    }
+    #last{
+      padding-top: 3px;
+    }
+    #hrline{
+      color: rgb(101, 108, 107);
+  
+    }
+   
+    
+
+
+</style>
+
+<body>
+
+
+  <div class="maindiv">
+    <div class="nav1">
+      <p class="flip"><img src="icons/pic_files/flipkart-plus_8d85f4.png" height="20px" width="90px" alt=""> <br><span
+          class="explore">Explore </span> <span class="plus">plus <img src="icons/pic_files/plus_aef861.png"
+            height="10px" width="10px" alt=""> </span></p>
+      <div class="vl1"><span class="hlpcntr">Help Center</span></div>
+    </div>
+    <div class="nav2">
+      <div class="btn1">
+        <button class="lbtn1">Login</button>
+      </div>
+      <div class="divp">
+        <p class="bac">Become a Seller</p>
+        <p class="more">More</p>
+        <div class="drpdwn">
+          <img src="icons/drop-down-25-16.png" height="20px" width="20px" alt="Dropdown icon">
+        </div>
+        <div class="divimagecart1">
+          <img src="icons/cart1.jpg" alt="" style="color: red; " height="20px" width="20px">
+        </div>
+        <p class="cart1"> Cart</p>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="navdiv">
+    <p class="navpara">Electronics</p>
+    <p class="navpara">TVs & Appliances</p>
+    <p class="navpara">Men</p>
+    <p class="navpara">Women</p>
+    <p class="navpara">Baby & Kids</p>
+    <p class="navpara">Home & Furniture</p>
+    <p class="navpara">Sports , Books & More</p>
+    <p class="navpara">Flights</p>
+    <p class="navpara">Offer Zone</p>
+
+  </div>
+
+
+  <div class="bdydivmain">
+    <div class="bdydiv1">
+      <div>
+        <img class="bell" src="https://www.shutterstock.com/image-vector/bell-icon-600nw-465336791.jpg" height="20px"
+          alt="">
+        NOTIFICATION PREFRENCCES <p>Desktop Notification</p>
+      </div>
+
+    </div>
+    <div class="bdydiv2">
+      <div class="lftdiv">
+
+      </div>
+      <div class="rghtdiv">
+        <div class="rghtdiv1">
+          <h4>Desktop Notifications</h4>
+          <div class="inlbl">
+            <input type="checkbox" id="chk1">
+            <label for="chk1">My Orders<br><span>Latest updates on your orders<img
+                  src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQcrbasSPmb7dicXNCtrFWgTQ5fl_EDOUx9SmgHBfvr-NB-x4dj"
+                  height="15px" alt=""></span> </label>
+                <hr>
+                <br>
+          </div>
+          <div class="inlbl">
+            <input type="checkbox" name="" id="chk2">
+            <label for="chk2">Reminders<br><span>Price Drop,Back-in-stack Products,etc <img class="img1"
+                  src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQcrbasSPmb7dicXNCtrFWgTQ5fl_EDOUx9SmgHBfvr-NB-x4dj"
+                  height="15px" alt=""> </span></label>
+            <hr>
+            <br>
+          </div>
+          <div class="inlbl">
+            <input type="checkbox" name="" id="chk3">
+            <label for="chk3">Recommendations by Flipkart<br><span>Products ,offers and curatedbased on your
+                interest<img class="img2"
+                  src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQcrbasSPmb7dicXNCtrFWgTQ5fl_EDOUx9SmgHBfvr-NB-x4dj"
+                  height="15px" alt=""></span></label>
+            <hr>
+            <br>
+          </div>
+          <div class="inlbl">
+            <input type="checkbox" name="" id="chk4">
+            <label for="chk4">New Offers <br><span>Top Deals and more<img class="img3"
+                  src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQcrbasSPmb7dicXNCtrFWgTQ5fl_EDOUx9SmgHBfvr-NB-x4dj"
+                  height="15px" alt=""></span></label>
+            <hr>
+            <br>
+          </div>
+          <div class="inlbl">
+            <input type="checkbox" name="" id="chk5">
+            <label for="chk5">My Flipkart Community<br><span>Profile Updates , Newssletters,etc.<img class="img4"
+                  src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQcrbasSPmb7dicXNCtrFWgTQ5fl_EDOUx9SmgHBfvr-NB-x4dj"
+                  height="15px" alt=""></span></label>
+            <hr>
+            <br>
+          </div>
+          <div class="inlbl">
+            <input type="checkbox" name="" id="chk6">
+            <label for="chk6">Feedback and Review <br><span>Rating and Reviews for your Purchase <img class="img5"
+                  src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQcrbasSPmb7dicXNCtrFWgTQ5fl_EDOUx9SmgHBfvr-NB-x4dj"
+                  height="15px" alt=""></span></label>
+            <hr>
+          </div>
+
+        </div>
+        <div class="rightdiv2">
+          <img 
+            src="data:image/jpeg;base64,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"
+            alt="">
+          <p> <span>
+              <pre>      Oops! You are missing out on a lot of important  <br>notifications. Please switch it on from Browser Settings.</pre>
+            </span></p>
+          <pre>                      How to Unblock</pre>
+          <pre>          <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAsdJREFUaAXtWE1rE1EUvfeNbdqFbhSTVsUPxGXQjRuRNBGxpjRQhLqq+Ce6ENfiwv9gRVcWRKk2UcTUIK7VjQsRrahtIrppF9W2M8/7AqVvJp2ZN7mNEX0DIe/jnnPuuXdmEh6AvWwFWBVAFloDD9bOn3A9uABSnpUIB1DibonyB0r4DIhPHQH3FnKVVxpkW4ZsA/teFI+tr3k3JEApLiMSm9nRIya/ni6/i4s13WcZSNdGStL17gDIXaaCALiEjpho5GZnzDHhkW0byNSGi56LlIR0WugR60T8nbqyh26pTMs+oCsEjNaHKpXWvWQrbRlI10YPS2/9DSW30yeHcKsXeq99yc+831jfP1c6ugqrV0HC5Y215jfisoBUtp5/MO9bTzhpz0B1+C5Vd3xTC5ccEOOLhdknm2v+0UB15JwL3rR+u5H4dKPw+KI/MtkssYFm9d21D7qMI8SlxaEyPQvR18Dz4oTrebf1KHR6jjRyDz/qa0nGIkmwipWuO6ZjEPGRSfIKo+JUvI4P8ul7JuPEBhDlSZ1YCDGlz+PGwfggXxw+uJ/YgAQ5qJOgJ97q87hxMD7IF4cP7ic2QG8T3ztfpORykDRq3hIf4IvCbrWX3MBWLF1cswa6WPymdOTvQPrl2F749fM6RZ6hh+1gp5NFwE+k8QxSfVcap+5/M9ELNXBorphZkfI1JZ42IdrOGDLS6Ec8Pp8v1+N4Q5+BFQD6i/znk1cJK12lH5e82g81IKVXMCHoVIypfqgBSsz3g9WpRCN4jfSjDERw/z1b1kC3e2E7YDvArIC9hZgFZMNtB9glZBLYDjALyIbbDrBLyCSwHWAWkA23HWCXkEnwT3dggVkcLtxIP7QDiKLKzYCDN9UPNdAPMKkOmDhJtIttHmyRvgk+1EDzVCzVlyWyKfqoI7+OX0qHPjfpaDFrcirX8YSswP9Qgd/E17fzhd11OgAAAABJRU5ErkJggg==" height="15px" alt=""> > Notifications > Allow</pre>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="MainFooter">
+    <div class="footer">
+    <div class="info">
+      <p class="fp">About</p>
+      <!-- <p>Contact Us</p> -->
+       <a style="color: white; text-decoration: none;" href="Contact.html">Contact Us</a>
+       <a href="About.html" style="text-decoration: none; color: white;"><p>About Us</p></a>
+       <p>Carrers</p>
+      <p>Flipcart Stories</p>
+      <p>Press</p>
+      <p><a style="text-decoration: none; color: white;" href="Corporate.html">Corporate Information</a></p>
+
+    </div>
+    
+    <div class="info1">
+    <p class="fp">Group Companies</p>
+    <p>Mayntra</p>
+    <p>Cleartrip</p>
+    <p>Shopsy</p>
+    </div>
+    
+    <div class="info2">
+      <p class="fp">Help</p>
+      <p>Payments</p>
+      <p>Shipping</p>
+      <p>Cancellation & </p>
+      <p>Returns</p>
+      <p>FAQ</p>
+    </div>
+    
+    <div class="info3">
+      <p class="fp">Consumer Policy</p>
+      <p>Cancellation &</p>
+      <p>Returns</p>
+      <p>Terms of Use</p>
+      <p>Security</p>
+      <p>Privacy</p>
+      <p>Sitemap</p>
+      <p>Grievance Redressal</p>
+      <p>EPR Compliance</p>
+    </div>
+    
+    <div class="vl"></div>
+    </div>
+    
+    <div class="footer1">
+    <div class="info4">
+      <p class="fp">Mail Us:</p>
+      <p>Flipcart Internert Private Limited,</p>
+      <p>Building Alyssa, Begonia &</p>
+      <p>Clove Embassy Tech Village,</p>
+      <p>Outer Ring Road,Deverabeesanahalli village,</p>
+      <p>Benguluru, 560103,</p>
+      <p>Karnatka,India</p>
+      <!-- <br> -->
+      
+      <p>Social:</p>
+      <!-- <br> -->
+      <div class="divimage">
+      <img class="fimge" src="icons/facebook.svg" alt="">
+      <img class="fimge" src="icons/ytbe.svg" alt="">
+      <img class="fimge" src="icons/x.svg" alt="">
+      <img class="fimge" src="icons/insta.svg" height="20px" width="20px" alt="">
+    </div>
+    </div>
+    
+    <div class="info5">
+      <p class="fp">Ragistered Office Address </p>
+      <p>Flipcart Internert Private Limited,</p>
+      <p>Building Alyssa, Begonia &</p>
+      <p>Clove Embassy Tech Village,</p>
+      <p>Outer Ring Road,Deverabeesanahalli village,</p>
+      <p>Benguluru, 560103,</p>
+      <p>Karnatka,India</p>
+      <p>CIN : U51109KA2012PTC066107</p>
+      <p>Telephone : 044 - 45614700/044-67415800</p>
+    </div>
+    </div>
+    
+    
+     
+    </div>
+    </div>
+    
+    <div class="horoLine">
+      <br><br><br>
+      <hr id="hrline">
+      <div class="footericon">
+     <div class="fcion"><img src="icons/f1.svg" alt="">Become a Seller</div>
+     <div class="fcion"><img src="icons/f2.svg" alt="">Advertise</div>
+     <div class="fcion"><img src="icons/f3.svg" alt="">Gift Cards</div>
+     <div class="fcion"><img src="icons/f4.svg" alt="">Help Center</div>
+     <div class="fcion" id="fcionimg" ><img src="icons/atrate.png" height="10px" width="30px"  alt="">2007 - 2005 Flipcart.com</div>
+     <div class="fcion" id="last"><img src="icons/i1.svg" alt=""></div>
+    </div>
+    
+    </div>
+</body>
+
+</html>

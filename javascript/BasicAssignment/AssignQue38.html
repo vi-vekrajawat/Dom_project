@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Assignment question 38</h1>
+
+    <script>
+       let num = prompt("Enter number")
+        let count_num = num;
+        let armstrongNum = num
+        let count = 0
+        let finalArmstrong = 0;
+        while(count_num>0){
+            let rem = count_num%10
+	        count++
+	        count_num = parseInt(count_num/10)
+        }
+        // document.write(count+" ")
+
+        while(armstrongNum>0){
+            let finalArmstrong1 = 1;
+
+            let rem = armstrongNum%10
+            for(let i = count;i>0;i--){
+                finalArmstrong1= finalArmstrong1*rem
+            }
+            finalArmstrong +=finalArmstrong1
+            armstrongNum = parseInt(armstrongNum/10)
+
+        }
+        document.write(finalArmstrong)
+
+    </script>
+</body>
+</html>

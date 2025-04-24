@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    .maindiv{
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: white; /* ya aapka nav ka bg color */
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px; /* adjust as per your layout */
+  /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);  */
+  /* box-shadow: 0 0 15px rgba(0,0,0,0.2); */
+
+}
+body {
+  padding-top: 80px; 
+}
+
+.nav1{
+  height: 70px;
+  width: 700px;
+  background-color: rgb(70, 70, 255);
+  display: flex;
+}
+.nav2{
+  height: 70px;
+  width: 900px;
+  background-color: rgb(70, 70, 255);
+  display: flex;
+}
+.inpara{
+  padding-bottom: 10px;
+}
+.flip{
+  padding-left: 150px;
+  color: white;
+  font-family: "Carter One" ,cursive;
+}
+.explore{
+   color: rgb(166, 166, 149);
+}
+.plus{
+  color: rgb(246, 246, 72);
+}
+.vl1 {
+  margin-top: 30px;
+  border-left: 1px solid rgb(101, 108, 107);
+  height: 34px;
+  margin-left: 8px;
+}
+.hlpcntr{
+  margin-left: 10px;
+  margin-top: 10px;
+  font-weight: bold;
+  color: white;
+}
+.btn1{
+  background-color: red;
+  width: 120px;
+  height: 20px;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+.lbtn1{
+  width: 120px;
+  height: 30px;
+  color: rgb(84, 84, 255);
+  font-weight: bold;
+
+}
+.divp{
+  height: 30px;
+  margin-top: 10px;
+  margin-left: 50px;
+  color: white;
+  font-weight: bold;
+  display: flex;
+}
+.more{
+  margin-left: 50px;
+}
+.divimagecart1{
+  margin-left: 40px;
+  margin-top: 15px;
+  font-weight: bold;
+}
+.drpdwn{
+  margin-top: 17px;
+  color: white;
+}
+
+
+.navdiv{
+  /* margin-top: 15px; */
+    display: flex;
+    height: 60px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+
+    /* background-color: red; */
+}
+.navpara{
+    padding-left: 50px;
+}
+.b_img{
+    margin-top: 10px;
+    height: 520px;
+    background-color: white;
+    width: 700px;
+    margin-left: 300px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+.b_img img{
+   
+    margin-top: 70px;
+    margin-left: 160px;
+}
+.b_img h2{
+    margin-left: 215px;
+}
+.b_img p{
+    margin-left: 270px;
+    /* gap: 50px; */
+}
+.b_img button{
+    background-color: rgb(73, 73, 245);
+    height: 40px;
+    width: 90px;
+    margin-left: 275px;
+    color: white;
+    border-color:  rgb(73, 73, 245);
+}
+
+.footer{
+      display: flex;
+    }
+    .info,.info1,.info2,.info3{
+      color: white;
+      /* padding-top: 5px; */
+      padding-left: 60px;
+    }
+    .vl {
+      margin-top: 20px;
+      border-left: 1px solid rgb(101, 108, 107);
+      height: 340px;
+      margin-left: 30px;
+    }
+    .info4,.info5{
+      color: white;
+      /* padding-top: 10px; */
+      padding-left: 30px;
+    }
+    .MainFooter{
+      display: flex;
+      margin-top: 30px;
+      height: 350px;
+      width: 1255px;
+      background-color: black;
+    }
+    .footer1{
+      display: flex;
+    }
+    .fp{
+      color: rgb(101, 108, 107);
+    }
+    
+   .horoLine{
+    background-color: black;
+    height: 140px;
+    width: 1255px;
+  
+   }
+  
+    .hol {
+      padding-top: 40px;
+      border: 1px solid red;
+    }
+    .fcion{
+      color: white;
+      padding-left: 30px;
+      font-size: 13px;
+  
+    }
+    .footericon{
+      display: flex;
+      padding: 30px;
+    }
+    .fction,img{
+      padding-left: 10px;
+    }
+    #rate{
+      color: white;
+    }
+    #fcionimg{
+      padding-top: 6px;
+    }
+    #last{
+      padding-top: 3px;
+    }
+    #hrline{
+      color: rgb(101, 108, 107);
+  
+    }
+   
+    
+
+</style>
+<body>
+    
+
+    <div class="maindiv">
+        <div class="nav1"> 
+          <p class="flip"><img src="icons/pic_files/flipkart-plus_8d85f4.png" height="20px" width="90px" alt=""> <br><span class="explore">Explore </span> <span class="plus">plus <img src="icons/pic_files/plus_aef861.png" height="10px" width="10px" alt=""> </span></p>
+          <div class="vl1"><span class="hlpcntr">Help Center</span></div>
+        </div>
+        <div class="nav2">
+          <div class="btn1">
+          <button class="lbtn1">Login</button>
+        </div>
+        <div class="divp">
+        <p class="bac">Become a Seller</p>
+        <p class="more">More</p>
+        <div class="drpdwn">
+          <img src="icons/drop-down-25-16.png" height="20px" width="20px" alt="Dropdown icon">
+        </div>
+        <div class="divimagecart1">
+        <img src="icons/cart1.jpg" alt="" style="color: red; " height="20px" width="20px">
+      </div>
+        <p class="cart1"> <a style="text-decoration: none; color: white;" href="Cart.html">Cart</a> </p>
+      </div>
+        </div>
+      </div>
+       
+    
+    <div class="navdiv">
+        <p class="navpara" >Electronics</p>
+        <p class="navpara" >TVs & Appliances</p>
+        <p class="navpara" >Men</p>
+        <p class="navpara" >Women</p>
+        <p class="navpara" >Baby & Kids</p>
+        <p class="navpara" >Home & Furniture</p>
+        <p class="navpara" >Sports , Books & More</p>
+        <p class="navpara" >Flights</p>
+        <p class="navpara" >Offer Zone</p>
+       
+    </div>
+    
+    <div class="b_img">
+        <img class="img" src="https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/error-500_cb8336.png" alt="">
+        <h2>Something's not right!</h2>
+        <p>Please try again</p>
+        <button>Retry</button>
+    </div>
+    
+
+    <div class="MainFooter">
+        <div class="footer">
+        <div class="info">
+          <p class="fp">About</p>
+          <!-- <p>Contact Us</p> -->
+           <a style="color: white; text-decoration: none;" href="Contact.html">Contact Us</a>
+           <a href="About.html" style="text-decoration: none; color: white;"><p>About Us</p></a>
+           <p>Carrers</p>
+          <p>Flipcart Stories</p>
+          <p>Press</p>
+          <p><a style="text-decoration: none; color: white;" href="Corporate.html">Corporate Information</a></p>
+
+        </div>
+        
+        <div class="info1">
+        <p class="fp">Group Companies</p>
+        <p>Mayntra</p>
+        <p>Cleartrip</p>
+        <p>Shopsy</p>
+        </div>
+        
+        <div class="info2">
+          <p class="fp">Help</p>
+          <p>Payments</p>
+          <p>Shipping</p>
+          <p>Cancellation & </p>
+          <p>Returns</p>
+          <p>FAQ</p>
+        </div>
+        
+        <div class="info3">
+          <p class="fp">Consumer Policy</p>
+          <p>Cancellation &</p>
+          <p>Returns</p>
+          <p>Terms of Use</p>
+          <p>Security</p>
+          <p>Privacy</p>
+          <p>Sitemap</p>
+          <p>Grievance Redressal</p>
+          <p>EPR Compliance</p>
+        </div>
+        
+        <div class="vl"></div>
+        </div>
+        
+        <div class="footer1">
+        <div class="info4">
+          <p class="fp">Mail Us:</p>
+          <p>Flipcart Internert Private Limited,</p>
+          <p>Building Alyssa, Begonia &</p>
+          <p>Clove Embassy Tech Village,</p>
+          <p>Outer Ring Road,Deverabeesanahalli village,</p>
+          <p>Benguluru, 560103,</p>
+          <p>Karnatka,India</p>
+          <!-- <br> -->
+          
+          <p>Social:</p>
+          <!-- <br> -->
+          <div class="divimage">
+          <img class="fimge" src="icons/facebook.svg" alt="">
+          <img class="fimge" src="icons/ytbe.svg" alt="">
+          <img class="fimge" src="icons/x.svg" alt="">
+          <img class="fimge" src="icons/insta.svg" height="20px" width="20px" alt="">
+        </div>
+        </div>
+        
+        <div class="info5">
+          <p class="fp">Ragistered Office Address </p>
+          <p>Flipcart Internert Private Limited,</p>
+          <p>Building Alyssa, Begonia &</p>
+          <p>Clove Embassy Tech Village,</p>
+          <p>Outer Ring Road,Deverabeesanahalli village,</p>
+          <p>Benguluru, 560103,</p>
+          <p>Karnatka,India</p>
+          <p>CIN : U51109KA2012PTC066107</p>
+          <p>Telephone : 044 - 45614700/044-67415800</p>
+        </div>
+        </div>
+        
+        
+         
+        </div>
+        </div>
+        
+        <div class="horoLine">
+          <br><br><br>
+          <hr id="hrline">
+          <div class="footericon">
+         <div class="fcion"><img src="icons/f1.svg" alt="">Become a Seller</div>
+         <div class="fcion"><img src="icons/f2.svg" alt=""><a style="text-decoration: none; color: white;" href="Advertise.html">Advertise</a></div>
+         <div class="fcion"><img src="icons/f3.svg" alt=""><a style="text-decoration: none; color: white;" href="Giftcard.html">Gift Cards</a></div>
+         <div class="fcion"><img src="icons/f4.svg" alt="">Help Center</div>
+         <div class="fcion" id="fcionimg" ><img src="icons/atrate.png" height="10px" width="30px"  alt="">2007 - 2005 Flipcart.com</div>
+         <div class="fcion" id="last"><img src="icons/i1.svg" alt=""></div>
+        </div>
+        
+        </div>
+       
+</body>
+</html>

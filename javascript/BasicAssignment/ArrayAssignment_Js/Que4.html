@@ -1,0 +1,47 @@
+<script>
+     const input = [
+  {
+    name: "John",
+    age: 13,
+  },
+  {
+    name: "Mark",
+    age: 56,
+  },
+  {
+    name: "Rachel",
+    age: 45,
+  },
+  {
+    name: "Nate",
+    age: 67,
+  },
+  {
+    name: "Jennifer",
+    age: 65,
+  },
+];
+
+const age = input.map(person=> person.age)
+document.write(age)
+document.write("<br>")
+document.write(age.length)
+document.write("<br>")
+
+let y = age[0]
+
+for(let i =0;i<age.length-1;i++){
+if(age[i]<=y){
+  y = arr[i]
+}
+}
+document.write("<br>")
+document.write(y)
+
+
+// document.write(age[0])
+// document.write(age[1])
+// document.write(age[2])
+// document.write(age[3])
+
+</script>

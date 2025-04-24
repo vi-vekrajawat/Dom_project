@@ -1,0 +1,117 @@
+.maindiv{
+    display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: white; /* ya aapka nav ka bg color */
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px; /* adjust as per your layout */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+  }
+ 
+  
+  .nav1{
+    height: 70px;
+    width: 700px;
+    background-color: rgb(70, 70, 255);
+    display: flex;
+  }
+  .nav2{
+    height: 70px;
+    width: 900px;
+    background-color: rgb(70, 70, 255);
+    display: flex;
+  }
+  .inpara{
+    padding-bottom: 10px;
+  }
+  .flip{
+    padding-left: 250px;
+    color: white;
+    font-family: "Carter One" ,cursive;
+  }
+  .explore{
+     color: rgb(166, 166, 149);
+  }
+  .plus{
+    color: rgb(246, 246, 72);
+  }
+ 
+  .hlpcntr{
+    margin-left: 10px;
+    margin-top: 10px;
+    font-weight: bold;
+    color: white;
+  }
+  .btn{
+    background-color: red;
+    width: 120px;
+    height: 20px;
+    margin-top: 19px;
+    margin-left: 180px;
+  }
+  .lbtn{
+    width: 120px;
+    height: 30px;
+    color: rgb(84, 84, 255);
+    font-weight: bold;
+  
+  }
+
+  #search {
+    height: 35px;
+    width: 400px;
+    border-radius: 10px;
+    font-size: 16px;
+    
+  }
+
+  .srchbar{
+    padding-top: 13px;
+    height: 57px;
+    width: 500px;
+    background-color: rgb(70, 70, 255);
+
+  }
+
+  .bdyimg{
+    margin-left: 150px;
+    margin-top: 100px;
+     height: 450px;
+    width: 600px;
+    /* background-color: red;  */
+    padding-left: 300px;
+    padding-top: 30px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+
+  }
+  .lbutn{
+    height: 25px;
+    width: 100px;
+    background-color: rgb(245, 99, 31);
+    border-style: none;
+}
+.btndiv{
+    padding-left: 120px;
+
+}
+.fdiv{
+    margin-top: 10px;
+    padding: 15px ;
+    display: flex;
+    height: 60px;
+    width: 1240px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    /* background-color: rebeccapurple; */
+}
+.p1{
+    padding-left: 100px;
+
+}
+  
+  
+  

@@ -1,0 +1,19 @@
+<script>
+    let num  = prompt("Enter first number")
+    let num2 = prompt("Enter last number")
+  
+   for(let i = num ; i<=num2;i++){
+               let num1 = i
+               let reverse1 = ""
+   while(num1>0){
+      
+       let rem = num1%10
+       reverse1+=(rem)
+       num1 = parseInt(num1/10)
+
+   }
+  
+       document.write(reverse1+" ")
+
+}
+</script>

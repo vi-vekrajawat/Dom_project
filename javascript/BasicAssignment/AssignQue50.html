@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>
+
+    </h1>
+    <script>
+         let num  = prompt("Enter first number")
+         let num2 = prompt("Enter last number")
+       
+        for(let i = num ; i<=num2;i++){
+                    let num1 = i
+                    let reverse = 0
+        while(num1>0){
+           
+            let rem = num1%10
+            reverse = reverse*10+rem
+            num1 = parseInt(num1/10)
+
+        }
+        if(reverse==i){
+            document.write(i+" ")
+        }
+    }
+    </script>
+</body>
+</html>

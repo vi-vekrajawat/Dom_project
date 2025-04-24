@@ -1,0 +1,236 @@
+.maindiv{
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: white; /* ya aapka nav ka bg color */
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px; /* adjust as per your layout */
+  /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);  */
+}
+.nav1{
+  height: 70px;
+  width: 700px;
+  background-color: rgb(70, 70, 255);
+  display: flex;
+}
+.nav2{
+  height: 70px;
+  width: 900px;
+  background-color: rgb(70, 70, 255);
+  display: flex;
+}
+.inpara{
+  padding-bottom: 10px;
+}
+.flip{
+  padding-left: 150px;
+  color: white;
+  font-family: "Carter One" ,cursive;
+}
+.explore{
+   color: rgb(166, 166, 149);
+}
+.plus{
+  color: rgb(246, 246, 72);
+}
+.vl1 {
+  margin-top: 30px;
+  border-left: 1px solid rgb(101, 108, 107);
+  height: 34px;
+  margin-left: 8px;
+}
+.hlpcntr{
+  margin-left: 10px;
+  margin-top: 10px;
+  font-weight: bold;
+  color: white;
+}
+.btn{
+  background-color: red;
+  width: 120px;
+  height: 20px;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+.lbtn{
+/* padding-top: 30px; */
+  width: 120px;
+  height: 30px;
+  color: rgb(84, 84, 255);
+  font-weight: bold;
+
+}
+.divp{
+  /* background-color: red; */
+  height: 30px;
+  margin-top: 10px;
+  margin-left: 50px;
+  color: white;
+  font-weight: bold;
+  display: flex;
+}
+.more{
+  margin-left: 50px;
+}
+.divimagecart{
+  /* background-color: red; */
+  margin-left: 40px;
+  margin-top: 15px;
+  font-weight: bold;
+}
+.drpdwn{
+  margin-top: 17px;
+  color: white;
+}
+
+
+
+
+.navdiv{
+    display: flex;
+    height: 60px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+
+    /* background-color: red; */
+}
+.navpara{
+    padding-left: 50px;
+}
+
+
+.footer{
+    display: flex;
+  }
+  .info,.info1,.info2,.info3{
+    color: white;
+    /* padding-top: 5px; */
+    padding-left: 60px;
+  }
+  .vl {
+    margin-top: 20px;
+    border-left: 1px solid rgb(101, 108, 107);
+    height: 340px;
+    margin-left: 30px;
+  }
+  .info4,.info5{
+    color: white;
+    /* padding-top: 10px; */
+    padding-left: 30px;
+  }
+  .MainFooter{
+    display: flex;
+    margin-top: 30px;
+    height: 350px;
+    width: 1255px;
+    background-color: black;
+  }
+  .footer1{
+    display: flex;
+  }
+  .fp{
+    color: rgb(101, 108, 107);
+  }
+  
+ .horoLine{
+  background-color: black;
+  height: 140px;
+  width: 1255px;
+
+ }
+
+  .hol {
+    padding-top: 40px;
+    border: 1px solid red;
+  }
+  .fcion{
+    color: white;
+    padding-left: 30px;
+    font-size: 13px;
+
+  }
+  .footericon{
+    display: flex;
+    padding: 30px;
+  }
+  .fction,img{
+    padding-left: 10px;
+  }
+  #rate{
+    color: white;
+  }
+  #fcionimg{
+    padding-top: 6px;
+  }
+  #last{
+    padding-top: 3px;
+  }
+  #hrline{
+    color: rgb(101, 108, 107);
+
+  }
+
+.bodydiv{
+  margin-top: 15px;
+  height: 500px;
+  width: 1000px;
+ 
+margin-left: 80px;
+  display: flex;
+  
+}
+.leftdiv{
+  height: 480px;
+  width: 400px;
+ 
+}
+
+.scroll-box {
+  width: 300px;
+  height: 480px;
+  overflow-y: scroll; /* Y-axis (vertical) scroll bar */
+  border: 1px solid #ccc;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+
+  padding: 10px;
+}
+.rightdiv{
+ 
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  height: 365px;
+  width: 700px;
+ 
+
+}
+.rghtimg{
+  height: 200px;
+  width: 200px;
+  padding-left: 190px;
+}
+.foopara{
+  padding-left: 150px;
+}
+.butn{
+  margin-left: 250px;
+}
+.logbtn{
+  height: 35px;
+  width: 110px;
+  background-color: rgb(245, 99, 31);
+}
+
+  .largepara{
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+margin-top: 20px;
+padding: 20px;
+
+  }
+  body {
+    padding-top: 80px; 
+  }
+ 
+  

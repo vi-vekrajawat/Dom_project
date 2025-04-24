@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Assignment question 40</h1>
+    <script>
+        let num = prompt("Ente number")
+        let num1 = num
+        let countEven = 0
+        let countOdd = 0
+        while(num1>0){
+            let rem = num1%10
+            if(rem%2==0){
+                countEven++
+            }
+            else{
+                countOdd++
+            }
+            num1 = parseInt(num1/10)
+
+        }
+        document.writeln("total even digits "+countEven)
+        document.write("<br>")
+        document.writeln("total odd digits "+countOdd)
+
+    </script>
+</body>
+</html>

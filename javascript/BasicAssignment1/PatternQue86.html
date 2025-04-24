@@ -1,0 +1,20 @@
+<pre>
+<script>
+    let num = prompt("Enter number")
+    let k =1
+    for(let i = 1;i<=num;i++){
+        for(let s = i;s<=num;s++){
+            document.write("&nbsp;")
+        }
+        for(let j = 1;j<=i*2-1;j++){
+          if(j%2==0){
+            document.write("0")
+          }
+          else{
+            document.write("1")
+          }
+        }
+        document.write("<br>")
+    }
+</script>
+</pre>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Navbar on Image</title>
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+    }
+
+    .nav {
+      position: relative;
+      /* width: 100%; */
+      width: 1300px;
+      height: 400px; /* adjust as needed */
+    }
+
+    .nav img.bg {
+      width: 100%;
+      /* height: 100%; */
+      object-fit: cover;
+      display: block;
+    }
+
+    .nav_content {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      background-color: rgba(0, 0, 0, 0.7); /* dark transparent bg */
+      /* padding: 10px 30px; */
+      padding-top: 20px;
+      z-index: 1;
+    }
+
+    .content {
+      padding-left: 40px;
+      color: white;
+    }
+
+    .d_v {
+      margin-left: 50px;
+      display: flex;
+    }
+
+    .b_tn {
+      margin-left: 120px;
+      /* margin-top: 5px; */
+      height: 40px;
+      width: 180px;
+      border-radius: 50px;
+      border: 2px solid yellow;
+      color: yellow;
+      background-color: rgb(50, 49, 49);
+      cursor: pointer;
+    }
+
+    .b_tn:hover {
+      background-color: yellow;
+      color: black;
+    }
+
+    .nav_logo {
+      height: 40px;
+      width: 120px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="nav">
+    <!-- Background Image -->
+    <img src="icons/fk_homepage_banner.webp" alt="Banner" class="bg">
+
+    <!-- Navbar Over Image -->
+    <div class="nav_content">
+      <img src="https://www.flipkartcareers.com/images/logo.png" alt="Flipkart Logo" class="nav_logo">
+      <div class="d_v">
+        <p class="content">About Flipkart</p>
+        <p class="content">Life At Flipkart</p>
+        <p class="content">Jobs</p>
+        <p class="content">Interviewing At Flipkart</p>
+        <p class="content">Campus</p>
+        <button class="b_tn">Candidate Login</button>
+      </div>
+      <p>Your voice Maximised</p>
+
+    </div>
+  </div>
+
+</body>
+</html>

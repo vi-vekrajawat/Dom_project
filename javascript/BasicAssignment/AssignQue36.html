@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Assignment question 36</h1>
+    <script>
+        let num = prompt("Enter number")
+        let reverse  = 0
+        while(num>0){
+            let rem = num%10;
+	        reverse = reverse*10+rem;
+	       num = parseInt(num/10); 
+            // point ke baad ke numbe ko hta deti hai 
+            // num = Math.floor(num/10) // ye bhi point ke baad ke number ko hta deti hai
+            // java script me num = num/10 kaam nhi krta hai isme float value v count kr leta hai jiise number kabhi zero nhi hota
+            // aur loop infinite tk chalta hai
+            // num--
+        }
+        document.write(reverse)
+    // </script>
+
+</body>
+</html>

@@ -1,0 +1,15 @@
+<script>
+    let num = prompt("Enter number")
+    for(let i = 1;i<=num;i++){
+        for(let s = i;s<=num;s++){
+            document.write("&nbsp;")
+        }
+        for(let j = 1;j<=i*2-1;j++){
+            if(i==j)
+            document.write("#")
+            else
+            document.write("*")
+        }
+        document.write("<br>")
+    }
+</script>

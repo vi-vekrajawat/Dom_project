@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Assignment question 39</h1>
+    <script>
+        let num = prompt("Enter number")
+        let num1 = num
+        let fact = 0
+        while(num1>0){
+            let fact1 = 1;
+            let rem = num1%10
+            for(let i = 1;i<=rem;i++){
+                fact1*=i
+            }
+            fact+=fact1
+            num1 = parseInt(num1/10)
+        }
+        if(fact==num){
+            document.write("number is strong")
+        }
+        else{
+            document.write("number is not strong")
+        }
+    </script>
+</body>
+</html>

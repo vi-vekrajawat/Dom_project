@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Assignment question 7</h1>
+    WAP to check whether entered number is prime or not.
+    <script>
+        let num = prompt("Enter number")
+        let count = 0;
+        for(let i = 1;i<=num/2;i++){
+            if(num%i==0){
+                count++;
+            }
+
+        }
+        if(count==1){
+            document.write("<br> Prime number")
+        }
+        else{
+            document.write("<br> not Prime number")
+
+        }
+    </script>
+</body>
+</html>

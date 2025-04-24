@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Flipkart Login Dropdown</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    .navdiv{
+      background-color: blue;
+      width: 100%;
+    }
+    .login-dropdown:hover .dropdown-menu {
+      display: block;
+    }
+
+    .dropdown-menu {
+      width: 250px;
+      padding: 0;
+      border-radius: 0;
+      box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .dropdown-menu .dropdown-header {
+      background-color: #f1f1f1;
+      padding: 10px 15px;
+      font-weight: 500;
+      font-size: 14px;
+    }
+
+    .dropdown-menu .dropdown-item {
+      padding: 10px 20px;
+      font-size: 14px;
+      display: flex;
+      align-items: center;
+    }
+
+    .dropdown-menu .dropdown-item img {
+      width: 20px;
+      margin-right: 10px;
+    }
+
+    .dropdown-menu .dropdown-item:hover {
+      background-color: #f0f0f0;
+    }
+
+    .login-trigger {
+      padding: 6px 12px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      border-radius: 50px;
+    }
+
+    .login-trigger:hover {
+      background-color: rgb(58, 58, 245);
+      color: white;
+    }
+
+    .login-trigger img {
+      margin-right: 5px;
+    }
+
+    .drpimg {
+      margin-left: 3px;
+    }
+
+    .navbar .right-section {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      margin-right: 220px;
+    }
+    .nav-link1{
+      margin-top: 7px;
+      text-decoration: none;
+      color: black;
+      margin-left: 70px;
+    }
+    .three-dot{
+      margin-left: 80px;
+      margin-top: 9px;
+    }
+    .container{
+      margin-top: 10px;
+      box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+      /* background-color: #f1f1f1; */
+
+      /* width: 100%; */
+
+    }
+    .carousel{
+      margin-top: 10px;
+    }
+    .container1{
+      margin-top: 10px;
+      box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+      /* background-color: #f1f1f1; */
+display: flex;
+      /* width: 100%; */
+
+    }
+  </style>
+</head>
+<body>
+  <div class="navdiv">
+<nav class="navbar navbar-expand-lg navbar-light bg-light px-4">
+  
+  <a class="navbar-brand" href="#">
+    <img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/fkheaderlogo_exploreplus-44005d.svg" height="30">
+  </a>
+
+  <div class="collapse navbar-collapse show">
+    <ul class="navbar-nav me-auto mb-2 mb-lg-0 align-items-center">
+
+      <!-- Search Bar -->
+      <li class="nav-item mx-3">
+        <input class="form-control" style="width: 300px;" type="text" placeholder="Search for Products, Brands and More">
+      </li>
+
+      <!-- Flipkart-style Login Dropdown with Icons -->
+      <li class="nav-item dropdown login-dropdown">
+        <div class="nav-link login-trigger" role="button">
+          <img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/profile-52e0dc.svg" height="20"> 
+          Login
+          <img class="drpimg" src="https://img.icons8.com/ios-glyphs/12/expand-arrow--v1.png" height="12">
+        </div>
+        <ul class="dropdown-menu">
+          <li class="dropdown-header d-flex justify-content-between align-items-center">
+            New Customer?
+            <a href="#" class="text-primary text-decoration-none">Sign Up</a>
+          </li>
+          <li><a class="dropdown-item" href="#"><img src="https://img.icons8.com/material-outlined/24/user.png"/>My Profile</a></li>
+          <li><a class="dropdown-item" href="#"><img src="https://img.icons8.com/ios/24/loyalty-card.png"/>Flipkart Plus Zone</a></li>
+          <li><a class="dropdown-item" href="#"><img src="https://img.icons8.com/ios/24/purchase-order.png"/>Orders</a></li>
+          <li><a class="dropdown-item" href="#"><img src="https://img.icons8.com/ios/24/like.png"/>Wishlist</a></li>
+          <li><a class="dropdown-item" href="#"><img src="https://img.icons8.com/ios/24/gift--v1.png"/>Rewards</a></li>
+          <li><a class="dropdown-item" href="#"><img src="https://img.icons8.com/ios/24/card-giftcard.png"/>Gift Cards</a></li>
+        </ul>
+      </li>
+
+    </ul>
+
+    <!-- Right side of navbar -->
+    <div class="right-section">
+      <a class="nav-link disabled" aria-disabled="true"><img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/header_cart-eed150.svg" alt="">
+        Cart</a>
+      <form class="d-flex" role="search">
+        <!-- <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"> -->
+        <a class="nav-link1"><img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/Store-9eeae2.svg" alt="">
+          Become a Seller</a>
+        <!-- <button class="btn btn-outline-success" type="submit">Search</button> -->
+         <img class="three-dot" src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/header_3verticalDots-ea7819.svg" alt="">
+      </form>
+    </div>
+  </div>
+</nav>
+</div>
+
+
+<div class="container text-center">
+  <div class="row">
+    <div class="col">
+     <img src="https://rukminim2.flixcart.com/flap/96/96/image/29327f40e9c4d26b.png?q=100" height="70px" alt=""> kilos
+    </div>
+    <div class="col">
+     <img src="https://rukminim2.flixcart.com/flap/96/96/image/22fddf3c7da4c4f4.png?q=100" height="70px" alt=""> Mobiles
+    </div>
+    <div class="col">
+      <img src="data:image/jpeg;base64,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" height="70px" alt="">Fashions
+    </div>
+    <div class="col">
+      <img src="https://www.laptopsdirect.co.uk/Images/X540NA-GQ052T_1_supersize.jpg?v=2" height="70px" width="70px" alt="">Electronics
+    </div>
+    <div class="col">
+      <img src="data:image/jpeg;base64,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" height="70px" alt="">Home&Furniture
+    </div>
+    <div class="col">
+     <img src="https://rukminim2.flixcart.com/fk-p-flap/96/96/image/0139228b2f7eb413.jpg?q=100" height="70px" alt="">Appliances
+    </div>
+    <div class="col">
+      <img src="https://rukminim2.flixcart.com/flap/96/96/image/71050627a56b4693.png?q=100" height="60px" alt="">Flight Booking
+    </div>
+    <div class="col">
+     <img src="data:image/jpeg;base64,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" height="85px" width="125px" alt="">Toy
+    </div>
+    <div class="col">
+     <img src="https://futuretechev.in/wp-content/uploads/2024/02/photo_6266955823372681418_y.jpg" width="70px" alt="">Two Wheelers
+    </div>
+  </div>
+</div>
+
+
+<div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="https://rukminim2.flixcart.com/fk-p-flap/1620/270/image/7850424b771b8f98.jpg?q=20" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="https://rukminim2.flixcart.com/fk-p-flap/1620/270/image/b03409919baf3392.jpg?q=20" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="https://rukminim2.flixcart.com/fk-p-flap/1620/270/image/f1a4da4f2555617c.jpg?q=20" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="https://rukminim2.flixcart.com/fk-p-flap/1620/270/image/7defc0ec271994c1.jpg?q=20" class="d-block w-100" alt="...">
+    </div>
+  </div>
+</div>
+
+
+<div class="container text-center">
+  <div class="row align-items-start">
+    <div class="col">
+     <img src="https://img.tatacliq.com/images/i9/437Wx649H/MP000000016239596_437Wx649H_202302071203501.jpeg" height="180px" alt=""> <br>Best Truewirless Headphones
+    </div>
+    <div class="col">
+     <img style="margin-top: 40px;" src="https://img.us.news.samsung.com/us/wp-content/uploads/2025/04/08093513/G91F_015_Front2_Black-scaled.jpg" height="120px" alt=""><br>Monitors
+    </div>
+    <div class="col">
+      <img style="margin-top: 20px;"  src="https://m.media-amazon.com/images/I/41z4pJfPnWL.jpg" height="120px" alt=""><br>Noise SmartWatches
+    </div>
+
+
+    <div class="col">
+      <img src="https://egate-world.com/cdn/shop/files/4X-1.1.jpg?v=1743410176" height="120px" alt=""><br>Projector
+    </div>
+    <!-- <div class="col">
+      <img src="https://m.media-amazon.com/images/I/41z4pJfPnWL.jpg" height="195px" alt=""><br>Noise SmartWatches
+    </div>
+    <div class="col">
+      <img src="https://m.media-amazon.com/images/I/41z4pJfPnWL.jpg" height="195px" alt=""><br>Noise SmartWatches
+    </div> -->
+  </div>
+</div>
+<!-- Bootstrap Bundle JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,17 @@
+<script>
+    let num = prompt("enter number")
+    let a = num-1
+    let b = num-2
+    for(let i= 1;i<=num;i++){
+        for(let j = num;j>=i;j--){
+            if(i==2&&(j==a||j==b)){
+            document.write("&nbsp;&nbsp;")
+            }
+            else{
+                document.write("*")
+            }
+
+        }
+        document.write("<br>")
+    }
+</script>

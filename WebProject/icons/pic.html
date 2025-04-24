@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<style>
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: gainsboro;
+  padding-top: 80px; /* Adjust padding for navbar */
+}
+
+/* Navbar */
+.maindiv1 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: white; /* Nav bar background color */
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 30px;
+  background-color: #f8f8f8;
+}
+
+#logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: blue;
+  font-family: "Carter One", cursive;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  padding: 5px 10px;
+  display: flex;
+  align-items: center;
+}
+
+#search {
+  height: 35px;
+  width: 400px;
+  border-radius: 10px;
+  padding-left: 10px;
+  font-size: 16px;
+}
+
+.login1 {
+  height: 100px;
+  width: 125px;
+  display: flex;
+  align-items: center;
+}
+
+.useri {
+  height: 22px;
+  margin-left: 5px;
+  margin-top: 40px;
+}
+
+.imdrp {
+  padding-top: 40px;
+  margin-right: 90px;
+}
+
+.imlogin {
+  margin-right: 10px;
+  padding-top: 35px;
+}
+
+nav img {
+  width: 30px;
+  height: 21px;
+  margin-left: 5px;
+}
+
+#cc {
+  padding-left: 10px;
+}
+
+/* Main category div */
+.divMain {
+  background-color: #f8f8f8;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 60px;
+  padding: 20px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  gap: 20px;
+  margin-top: 50px; /* Spacing from navbar */
+}
+
+.divis {
+  text-align: center;
+}
+
+.divis img {
+  height: 100px;
+  width: 100px;
+  object-fit: cover;
+}
+
+/* Carousel */
+.carousel {
+  position: relative;
+  background-color: red;
+  width: 90%;
+  height: 300px;
+  margin: 20px auto;
+  overflow: hidden;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.slides {
+  display: flex;
+  width: 400%;
+  height: 100%;
+  animation: slideAnim 20s infinite;
+}
+
+.slide {
+  width: 100%;
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Slide animation (auto-scroll) */
+@keyframes slideAnim {
+  0% { transform: translateX(0%); }
+  20% { transform: translateX(0%); }
+  25% { transform: translateX(-100%); }
+  45% { transform: translateX(-100%); }
+  50% { transform: translateX(-200%); }
+  70% { transform: translateX(-200%); }
+  75% { transform: translateX(-300%); }
+  95% { transform: translateX(-300%); }
+  100% { transform: translateX(0%); }
+}
+
+/* Sections for product categories */
+.electronic-section, .beauty-section, .SHME-section, .TDA-section, .FSP-section {
+  margin: 30px;
+  display: inline-block;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  width: 90%;
+  background-color: #f8f8f8;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.electronic-section h3, .beauty-section h3, .SHME-section h3, .TDA-section h3, .FSP-section h3 {
+  margin-bottom: 15px;
+}
+
+.electronic-items, .beauty-items, .SHME-items, .TDA-items, .FSP-items {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.electronic-items img, .beauty-items img, .SHME-items img, .TDA-items img, .FSP-items img {
+  width: 150px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive for smaller screens */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 15px;
+  }
+
+  #search {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  nav a {
+    margin-bottom: 10px;
+  }
+
+  .electronic-items {
+    justify-content: center;
+  }
+
+  .MainFooter {
+    flex-direction: column;
+  }
+
+  .info, .info1, .info2, .info3, .info4, .info5 {
+    padding: 20px;
+    text-align: center;
+  }
+
+  .footericon {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* Footer */
+.MainFooter {
+  display: flex;
+  height: 350px;
+  width: 100%;
+  background-color: black;
+  margin-top: 10px;
+  flex-wrap: wrap;
+  padding: 10px;
+}
+
+.info, .info1, .info2, .info3, .info4, .info5 {
+  color: white;
+  padding: 40px;
+  flex: 1;
+}
+
+.vl {
+  margin-top: 40px;
+  border-left: 1px solid rgb(101, 108, 107);
+  height: 300px;
+  margin-left: 30px;
+}
+
+.horoLine {
+  background-color: black;
+  height: 140px;
+  width: 100%;
+}
+
+.footericon {
+  display: flex;
+  padding: 30px;
+}
+
+.fcion {
+  color: white;
+  padding-left: 30px;
+  font-size: 13px;
+}
+
+.fp {
+  color: rgb(101, 108, 107);
+  padding: 10px;
+}
+
+#hrline {
+  color: rgb(101, 108, 107);
+}
+
+#rate {
+  color: white;
+}
+
+#fcionimg {
+  padding-top: 6px;
+}
+
+#last {
+  padding-top: 3px;
+}
+
+</style>
+<body>
+	 <!-- Navbar -->
+	 <nav class=" maindiv1">
+		<div id="logo"><p>Flipcart </p> <span style="display: flex;"><p style="color: rgb(143, 151, 159); font-size: 14px;"> Explore</p> <p style="color: rgb(238, 238, 52); font-size: 12px; padding: 3px;"> plus</p></span>
+		 
+		</span></div>
+		<a href="#">
+		  <input type="text" placeholder="  Search For Products , Brands and More" id="search">
+		</a>
+	   <div class="login1">
+		 
+		  <div><img  src="icons/u2.jpg" height="20px" width="50px" alt=""></div>
+		  <p><a href="Login.html">Login</a></p>
+		  <div><img  src="icons/drop-down-25-16.png" alt="Dropdown icon"></div>
+		</div>
+		<a href="#" id="cc">
+		  <img src="icons/cart1.jpg" alt="">Cart
+		</a>
+		<a href="#">
+		  <img src="icons/seller1.jpg" alt=""> Become a Seller
+		</a>
+		<a href="#">
+		  <img src="icons/dots.svg" alt="">
+		</a>
+	  </nav>
+	
+	  <!-- Categories -->
+	  <div class="divMain">
+		<div class="divis">
+		  <img src="icons/kilos.webp" alt="">
+		  <p>kilos</p>
+		</div>
+		<div class="divis">
+		  <img src="icons/mobile.webp" alt="">
+		  <p>Mobile</p>
+		</div>
+		<div class="divis">
+		  <img src="icons/computer1.jpg" alt="">
+		  <p>Electronics</p>
+		</div>
+		<div class="divis">
+		  <img src="icons/furniture1.jpg" alt="">
+		  <p>Home & Furniture</p>
+		</div>
+		<div class="divis">
+		  <img src="icons/appliance.webp" alt="">
+		  <p>Appliance</p>
+		</div>
+		<div class="divis">
+		  <img src="icons/flight1.webp" alt="">
+		  <p>Flight Booking</p>
+		</div>
+		<div class="divis">
+		  <img src="icons/toy1.png" alt="">
+		  <p>Beauty,Toys & More</p>
+		</div>
+		<div class="divis">
+		  <img src="icons/bike1.png" alt="">
+		  <p>Two Wheelers</p>
+		</div>
+	  </div>
+	
+	  <!-- Carousel -->
+	  <div class="carousel">
+		<div class="slides">
+		  <div class="slide"><img src="icons/flipcart1.jpg" alt="1"></div>
+		  <div class="slide"><img src="icons/flipcart2.jpg" alt="2"></div>
+		  <div class="slide"><img src="icons/flipcart3.jpg" alt="3"></div>
+		  <div class="slide"><img src="icons/flipkart.jpg" alt="4"></div>
+		</div>
+	  </div>
+	
+	  <!-- Electronics Section -->
+	  <div class="electronic-section">
+		<h3>Best of Electronics</h3>
+		<div class="electronic-items">
+		  <div>
+		  <img src="icons/electronic11.jpg" alt="">
+		  <p>boat smartWatches 999</p>
+		</div>
+	
+		<div>
+		  <img src="icons/electronic22.jpg" alt="">
+		  <p>Asus moniters 14999</p>
+		</div>
+	
+		<div>
+		  <img src="icons/electronic33.jpg" alt="">
+		  <p>mivi play 799</p>
+		</div>
+		<div>
+		  <img src="icons/electronic44.jpg" alt="">
+		  <p>printers from 23360</p>
+		</div>
+	
+		<div>
+		  <img src="icons/electronic55.jpg" alt="">
+		  <p>Best of shavers from 1,649</p>
+		</div>
+		</div>
+	  </div>
+	
+	<!-- Beauty , Food , Toys & more -->
+	  <div class="beauty-section">
+		<h3> Beauty , Food , Toys & more</h3>
+		<div class="beauty-items">
+		  <div>
+		  <img src="icons/beauty1.jfif" alt="">
+		  <!-- <p>coffie powder upto 80%</p> -->
+		</div>
+	
+		<div>
+		  <img src="icons/beauty2.jfif" alt="">
+		  <!-- <p>Top Selling stationery from 49</p> -->
+		</div>
+	
+		<!-- <div>
+		  <img src="icons/beauty3.jfif" alt="">
+		  <p>Best of action toys upto 70% off</p>
+		</div> -->
+	
+		<div>
+		  <img src="icons/beauty4.jfif" alt="">
+		  <!-- <p>Best of action toys upto 70% off</p> -->
+		</div>
+		<div>
+		  <img src="icons/beauty5.jfif" alt="">
+		  <!-- <p>Remote controls toys up to 70% off</p> -->
+		</div>
+	
+		<div>
+		  <img src="icons/beauty6.jfif" alt="">
+		  <!-- <p> Dumbbells Home Gym Combo 7999</p> -->
+		</div>
+		</div>
+	  </div>
+	
+	
+	
+	  <div class="SHME-section">
+		<h3> Beauty , Food , Toys & more</h3>
+		<div class="SHME-items">
+		  <div>
+		  <img src="icons/shm1.webp" alt="">
+		  <!-- <p>coffie powder upto 80%</p> -->
+		</div>
+	
+		<div>
+		  <img src="icons/shm2.webp" alt="">
+		  <!-- <p>Top Selling stationery from 49</p> -->
+		</div>
+	
+		<!-- <div>
+		  <img src="icons/beauty3.jfif" alt="">
+		  <p>Best of action toys upto 70% off</p>
+		</div> -->
+	
+		<div>
+		  <img src="icons/shm3.jfif" alt="">
+		  <!-- <p>Best of action toys upto 70% off</p> -->
+		</div>
+		<div>
+		  <img src="icons/shm4.jfif" alt="">
+		  <!-- <p>Remote controls toys up to 70% off</p> -->
+		</div>
+	
+		<div>
+		  <img src="icons/shm5.jfif" alt="">
+		  <!-- <p> Dumbbells Home Gym Combo 7999</p> -->
+		</div>
+		</div>
+	  </div>
+	
+	
+	
+	  <div class="TDA-section">
+		<h3> Top Deals On TVs & Appliances</h3>
+		<div class="TDA-items">
+		  <div>
+		  <img src="icons/tda1.jfif" alt="">
+		  <!-- <p>coffie powder upto 80%</p> -->
+		</div>
+	
+		<div>
+		  <img src="icons/tda2.jfif" alt="">
+		  <!-- <p>Top Selling stationery from 49</p> -->
+		</div>
+	
+		<!-- <div>
+		  <img src="icons/beauty3.jfif" alt="">
+		  <p>Best of action toys upto 70% off</p>
+		</div> -->
+	
+		<div>
+		  <img src="icons/tda3.jfif" alt="">
+		  <!-- <p>Best of action toys upto 70% off</p> -->
+		</div>
+		<div>
+		  <img src="icons/tda4.jfif" alt="">
+		  <!-- <p>Remote controls toys up to 70% off</p> -->
+		</div>
+	
+		<div>
+		  <img src="icons/tda5.jfif" alt="">
+		  <!-- <p> Dumbbells Home Gym Combo 7999</p> -->
+		</div>
+		</div>
+	  </div>
+	
+	
+	  <div class="FSP-section">
+		<h3> Top Deals On TVs & Appliances</h3>
+		<div class="FSP-items">
+		  <div>
+		  <img src="icons/fsp1.jfif" alt="">
+		  <!-- <p>coffie powder upto 80%</p> -->
+		</div>
+	
+		<div>
+		  <img src="icons/fsp2.jfif" alt="">
+		  <!-- <p>Top Selling stationery from 49</p> -->
+		</div>
+	
+		<!-- <div>
+		  <img src="icons/beauty3.jfif" alt="">
+		  <p>Best of action toys upto 70% off</p>
+		</div> -->
+	
+		<div>
+		  <img src="icons/fsp3.jfif" alt="">
+		  <!-- <p>Best of action toys upto 70% off</p> -->
+		</div>
+		<div>
+		  <img src="icons/fsp4.jfif" alt="">
+		  <!-- <p>Remote controls toys up to 70% off</p> -->
+		</div>
+	
+		<div>
+		  <img src="icons/fsp5.jfif" alt="">
+		  <!-- <p> Dumbbells Home Gym Combo 7999</p> -->
+		</div>
+		</div>
+	  </div>
+	
+	<div class="sectiontwo">
+	<div>
+	<h3>Fashion & Stylish</h3>
+	<div class="STP-section"> 
+	  <div class="stp"><img src="icons/cricket2.jfif" height="200px" width="200px" alt=""></div>
+	  <div class="stp"><img src="icons/sarres.jfif" height="200px" width="200px" alt=""></div>
+	  <div class="stp"><img src="icons/gaowns.jfif" height="200px" width="200px" alt=""></div>
+	  <div class="stp"><img src="icons/mixer.jfif"  height="200px" width="200px" alt=""></div>
+	</div>
+	</div>
+	<div>
+	  <h3>Home Decor & Furnishing</h3>
+	  <div class="HOME-section"> 
+		<div class="home"><img src="icons/home1.jpg" height="200px" width="200px" alt=""></div>
+		<div class="home"><img src="icons/home2.jfif" height="200px" width="200px" alt=""></div>
+		<div class="home"><img src="icons/home3.jfif"  height="200px" width="200px" alt=""></div>
+		<div class="home"><img src="icons/home4.jfif" height="200px" width="200px" alt=""></div>
+	  </div>
+	  </div>
+	
+	 
+	</div >
+	
+	<div class="MainFooter">
+	<div class="footer">
+	<div class="info">
+	  <p class="fp">About</p>
+	  <a<p> href="Contact.html"> Contact Us</p></a>
+	  <p>About Us</p>
+	  <p>Carrers</p>
+	  <p>Flipcart Stories</p>
+	  <p>Press</p>
+	</div>
+	
+	<div class="info1">
+	<p class="fp">Group Companies</p>
+	<p>Mayntra</p>
+	<p>Cleartrip</p>
+	<p>Shopsy</p>
+	</div>
+	
+	<div class="info2">
+	  <p class="fp">Help</p>
+	  <p>Payments</p>
+	  <p>Shipping</p>
+	  <p>Cancellation & </p>
+	  <p>Returns</p>
+	  <p>FAQ</p>
+	</div>
+	
+	<div class="info3">
+	  <p class="fp">Consumer Policy</p>
+	  <p>Cancellation &</p>
+	  <p>Returns</p>
+	  <p>Terms of Use</p>
+	  <p>Security</p>
+	  <p>Privacy</p>
+	  <p>Sitemap</p>
+	  <p>Grievance Redressal</p>
+	  <p>EPR Compliance</p>
+	</div>
+	
+	<div class="vl"></div>
+	</div>
+	
+	<div class="footer1">
+	<div class="info4">
+	  <p class="fp">Mail Us:</p>
+	  <p>Flipcart Internert Private Limited,</p>
+	  <p>Building Alyssa, Begonia &</p>
+	  <p>Clove Embassy Tech Village,</p>
+	  <p>Outer Ring Road,Deverabeesanahalli village,</p>
+	  <p>Benguluru, 560103,</p>
+	  <p>Karnatka,India</p>
+	  <br>
+	  
+	  <p>Social:</p>
+	  <br>
+	  <div class="divimage">
+	  <img class="fimge" src="icons/facebook.svg" alt="">
+	  <img class="fimge" src="icons/ytbe.svg" alt="">
+	  <img class="fimge" src="icons/x.svg" alt="">
+	  <img class="fimge" src="icons/insta.svg" height="30px" width="30px" alt="">
+	</div>
+	</div>
+	
+	<div class="info5">
+	  <p class="fp">Ragistered Office Address </p>
+	  <p>Flipcart Internert Private Limited,</p>
+	  <p>Building Alyssa, Begonia &</p>
+	  <p>Clove Embassy Tech Village,</p>
+	  <p>Outer Ring Road,Deverabeesanahalli village,</p>
+	  <p>Benguluru, 560103,</p>
+	  <p>Karnatka,India</p>
+	  <p>CIN : U51109KA2012PTC066107</p>
+	  <p>Telephone : 044 - 45614700/044-67415800</p>
+	</div>
+	</div>
+	
+	
+	 
+	</div>
+	</div>
+	
+	<div class="horoLine">
+	  <br><br><br>
+	  <hr id="hrline">
+	  <div class="footericon">
+	 <div class="fcion"><img src="icons/f1.svg" alt="">Become a Seller</div>
+	 <div class="fcion"><img src="icons/f2.svg" alt="">Advertise</div>
+	 <div class="fcion"><img src="icons/f3.svg" alt="">Gift Cards</div>
+	 <div class="fcion"><img src="icons/f4.svg" alt="">Help Center</div>
+	 <div class="fcion" id="fcionimg" ><img src="icons/atrate.png" height="10px" width="30px"  alt="">2007 - 2005 Flipcart.com</div>
+	 <div class="fcion" id="last"><img src="icons/i1.svg" alt=""></div>
+	</div>
+	
+	</div>
+	
+</body>
+</html>
